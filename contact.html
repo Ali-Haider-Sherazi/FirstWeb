@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Contact Information</h1>
+   <hr size="3">
+   <h3>Phone Numbers</h3>
+   <ol>
+    <li>033598879879</li>
+    <li>033456464656</li>
+   </ol>
+   <h3>Mail</h3>
+   <ol type="a">
+        <li>syedalisherazi55@gmail.com</li>
+        <li>syedalisherazi99@gmail.com</li>
+   </ol> 
+   <h3>Social Media</h3>
+   <p><a href="https://www.facebook.com/" target="_blank">Syed Ali Sherazi</a></p>
+   <hr size="5" noshade="5">
+   <!--A simple mail to send data to specific mail, enctype that 
+    only plan text text(form added %2 or other rhings due to UTF-8
+    so to ensure that what user enter just that send use text/planText )-->
+    <!--Must add name attribute in tags to send your data to mentioned mail-->
+   <form action="mailto:@syedalisherazi99@gmail.com" method="post" enctype="text/plain">
+    <label>Name :</label>
+    <input type="text" name="YourName">
+    <br>
+
+    <label>Mail :</label>
+    <input type="email" name="YourMail">
+    <br>
+    
+    <label>Message :</label><br>
+    <textarea name="YourMessage" rows="10" cols="40"></textarea>
+    <br>
+    <input type="submit">
+   </form>
+</body>
+</html>
